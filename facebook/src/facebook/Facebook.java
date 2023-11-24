@@ -14,6 +14,8 @@ public class Facebook {
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys("shane");
 		driver.findElement(By.id("pass")).sendKeys("shane@6617");
+		
+		driver.findElement(By.linkText("Create new account")).click();
 		driver.close();
 	}
 }
